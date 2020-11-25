@@ -6,19 +6,19 @@
 <meta name="generator" content="Docusaurus v2.0.0-alpha.69">
 <title data-react-helmet="true">编写良好的单元测试 | Docusaurus Search</title><meta data-react-helmet="true" property="og:title" content="编写良好的单元测试 | Docusaurus Search"><meta data-react-helmet="true" name="description" content="本文转载自 https://wangshenwei.com/writing-good-unit-tests/ 。"><meta data-react-helmet="true" property="og:description" content="本文转载自 https://wangshenwei.com/writing-good-unit-tests/ 。"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docusaurus_language" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="shortcut icon" href="/docusaurus-search-example/img/favicon.ico"><link rel="stylesheet" href="/docusaurus-search-example/styles.0319ad23.css">
 <link rel="preload" href="/docusaurus-search-example/styles.82470be2.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/runtime~main.d3a99be0.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/main.8cf7c188.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/runtime~main.6efec834.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/main.c2f9fad6.js" as="script">
 <link rel="preload" href="/docusaurus-search-example/common.54be56fc.js" as="script">
 <link rel="preload" href="/docusaurus-search-example/2.1d078d0b.js" as="script">
 <link rel="preload" href="/docusaurus-search-example/3.01accaf7.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/01a85c17.6ff1a81c.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/1a4e3797.c0eb4bf1.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/1be78505.00bb1cfe.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/6875c492.ff433610.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/a6aa9e1f.ed8cec74.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/c4f5d8e4.1b05a1f0.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/ccc49370.9719c82c.js" as="script">
-<link rel="preload" href="/docusaurus-search-example/37.de5ff9db.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/01a85c17.b327e949.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/1a4e3797.b4e06137.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/1be78505.6be91a72.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/6875c492.9fe49894.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/a6aa9e1f.bac4c6c7.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/c4f5d8e4.c63f8ba5.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/ccc49370.923a2e77.js" as="script">
+<link rel="preload" href="/docusaurus-search-example/37.445b6510.js" as="script">
 <link rel="preload" href="/docusaurus-search-example/46879248.bd2d833b.js" as="script">
 <link rel="preload" href="/docusaurus-search-example/3a35335b.3d600529.js" as="script">
 </head>
@@ -77,19 +77,19 @@ test(&quot;MyComponent&quot;, () =&gt; {
 expect(wrapper.instance().state.valid).toBe(&quot;invalid&quot;);
 </code></pre><h2 id="重构与拆分">重构与拆分</h2><p>更简单的输入、输出让我们可以更容易地编写好的单元测试，但往往实际情况是业务需求不断增长，组件内部逻辑不断复杂化，输入输出的形式形态更加多样化，为组件编写单元测试的难度也随之陡增。</p><p><strong>适时地重构与拆分</strong>是解决这个问题的关键。在如今的前端组件化的模式下尤为重要，合理拆分后的组件可以让每个测试单元的输入输出都变得更少、更聚焦。诸如 React, <a href="https://redux.js.org/">Redux</a> 等主流框架和工具推崇的<a href="https://flaviocopes.com/react-unidirectional-data-flow/">单向数据流</a>盛行的其中一个原因就是它们巧妙地让各个单元的输入来源、输出影响单一化，从而降低编写单元测试的难度，同时提升组件集成时的信心。</p><h2 id="总结">总结</h2><p>编写良好的单元测试总结下来就是三条：</p><ul><li>识别测试对象的输入、输出</li><li>掌握不同形态下的输入覆盖、输出断言的方法</li><li>适时地重构与拆分</li></ul><p>希望以上内容对大家有所帮助。</p></section></article><div><a href="https://github.com/easyops-cn/docusaurus-search-example/edit/master/website/blog/blog/2019-06-15-writing-good-unit-tests.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="margin-vert--xl"><nav class="pagination-nav" aria-label="Blog post page navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docusaurus-search-example/blog/welcome"><div class="pagination-nav__sublabel">Older Post</div><div class="pagination-nav__label">Welcome »</div></a></div></nav></div></main><div class="col col--2"><div class="tableOfContents_3SO_ thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#基本方法" class="table-of-contents__link">基本方法</a></li><li><a href="#输入" class="table-of-contents__link">输入</a></li><li><a href="#输出" class="table-of-contents__link">输出</a></li><li><a href="#重构与拆分" class="table-of-contents__link">重构与拆分</a></li><li><a href="#总结" class="table-of-contents__link">总结</a></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docusaurus-search-example/docs/">Style Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/docusaurus-search-example/docs/doc2/">Second Doc</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Community</h4><ul class="footer__items"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow</a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord</a></li><li class="footer__item"><a href="https://twitter.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docusaurus-search-example/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/easyops-cn/docusaurus-search-local" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub</a></li></ul></div></div><div class="text--center"><div>Copyright © 2020 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
 <script src="/docusaurus-search-example/styles.82470be2.js"></script>
-<script src="/docusaurus-search-example/runtime~main.d3a99be0.js"></script>
-<script src="/docusaurus-search-example/main.8cf7c188.js"></script>
+<script src="/docusaurus-search-example/runtime~main.6efec834.js"></script>
+<script src="/docusaurus-search-example/main.c2f9fad6.js"></script>
 <script src="/docusaurus-search-example/common.54be56fc.js"></script>
 <script src="/docusaurus-search-example/2.1d078d0b.js"></script>
 <script src="/docusaurus-search-example/3.01accaf7.js"></script>
-<script src="/docusaurus-search-example/01a85c17.6ff1a81c.js"></script>
-<script src="/docusaurus-search-example/1a4e3797.c0eb4bf1.js"></script>
-<script src="/docusaurus-search-example/1be78505.00bb1cfe.js"></script>
-<script src="/docusaurus-search-example/6875c492.ff433610.js"></script>
-<script src="/docusaurus-search-example/a6aa9e1f.ed8cec74.js"></script>
-<script src="/docusaurus-search-example/c4f5d8e4.1b05a1f0.js"></script>
-<script src="/docusaurus-search-example/ccc49370.9719c82c.js"></script>
-<script src="/docusaurus-search-example/37.de5ff9db.js"></script>
+<script src="/docusaurus-search-example/01a85c17.b327e949.js"></script>
+<script src="/docusaurus-search-example/1a4e3797.b4e06137.js"></script>
+<script src="/docusaurus-search-example/1be78505.6be91a72.js"></script>
+<script src="/docusaurus-search-example/6875c492.9fe49894.js"></script>
+<script src="/docusaurus-search-example/a6aa9e1f.bac4c6c7.js"></script>
+<script src="/docusaurus-search-example/c4f5d8e4.c63f8ba5.js"></script>
+<script src="/docusaurus-search-example/ccc49370.923a2e77.js"></script>
+<script src="/docusaurus-search-example/37.445b6510.js"></script>
 <script src="/docusaurus-search-example/46879248.bd2d833b.js"></script>
 <script src="/docusaurus-search-example/3a35335b.3d600529.js"></script>
 </body>
